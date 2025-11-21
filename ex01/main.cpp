@@ -3,8 +3,12 @@
 int	main(void)
 {
 	ClapTrap	clappy("Bernard");
-	ScavTrap	scavy("Bobby");
+	ScavTrap	scavy("Johnson");
+	ClapTrap	fakeScavy = clappy;
+	ScavTrap	trueScavy(scavy);
+	ScavTrap	noname;
 
+	noname = trueScavy;
 	scavy.guardGate();
 	scavy.attack("Bobby");
 	scavy.attack("Bobby");
@@ -29,5 +33,8 @@ int	main(void)
 	scavy.attack("Bobby");
 	scavy.beRepaired(20);
 	scavy.guardGate();
+	fakeScavy.beRepaired(2);
+	trueScavy.beRepaired(2);
+	noname.attack("mdr");
 	return (0);
 }
