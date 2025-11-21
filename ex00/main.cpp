@@ -3,6 +3,8 @@
 int	main(void)
 {
 	ClapTrap	clappy("Bernard");
+	ClapTrap	mickael = clappy;
+	ClapTrap	johnny;
 
 	clappy.attack("Bobby");
 	clappy.attack("Bobby");
@@ -26,5 +28,8 @@ int	main(void)
 	clappy.takeDamage(3);
 	clappy.attack("Bobby");
 	clappy.beRepaired(2);
+	mickael.attack("clappy");
+	johnny = clappy;
+	johnny.attack("clappy");
 	return (0);
 }
