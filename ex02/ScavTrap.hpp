@@ -1,12 +1,13 @@
 #include "ClapTrap.hpp"
 
-class ScavTrap : ClapTrap
+class ScavTrap : public ClapTrap
 {
 	public:
+		ScavTrap(void);
 		ScavTrap(const std::string name);
 		~ScavTrap(void);
+		ScavTrap(const ScavTrap&);
+		ScavTrap& operator=(const ScavTrap&);
 		void	attack(const std::string&);
-		void	takeDamage(unsigned int);
-		void	beRepaired(unsigned int);
 		void	guardGate(void);
 };
