@@ -1,19 +1,23 @@
 #include "ClapTrap.hpp"
 #include <iostream>
 
-ClapTrap::ClapTrap(void):
-	_name("nameless"), _hitPoints(10), _energyPoints(10), _attackDamage(0),
-	_maxHitPoints(_hitPoints)
+ClapTrap::ClapTrap(void): _name("nameless")
 {
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m" << "ClapTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name):
-	_name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0),
-	_maxHitPoints(_hitPoints)
+ClapTrap::ClapTrap(const std::string& name): _name(name)
 {
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m"
 		<< "ClapTrap " << _name << " is constructed."
 		<< "\033[0m" << std::endl;

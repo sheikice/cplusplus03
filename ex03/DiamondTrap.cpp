@@ -1,26 +1,24 @@
 #include "DiamondTrap.hpp"
 #include <iostream>
 
-DiamondTrap::DiamondTrap(void) : ClapTrap(), FragTrap(), ScavTrap()
+DiamondTrap::DiamondTrap(): ClapTrap("nameless_clap_name"), ScavTrap(), FragTrap(), _name("nameless")
 {
-	_name = "nameless";
-	ClapTrap::_name = _name + "_clap_name";
-	_hitPoints = 100;
-	_energyPoints = 100;
-	_attackDamage = 30;
+	_hitPoints = FragTrap::_DEFAULT_HP;
+	_energyPoints = ScavTrap::_DEFAULT_EP;
+	_attackDamage = FragTrap::_DEFAULT_AD;
 	_maxHitPoints = _hitPoints;
 	std::cout << "\033[1;32m" << "DiamondTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const std::string name) : ClapTrap(name), FragTrap(name), ScavTrap(name)
+DiamondTrap::DiamondTrap(const std::string& name):
+	ClapTrap(name + "_clap_name"), ScavTrap(), FragTrap(), _name(name)
 {
-	_name = name;
-	ClapTrap::_name = _name + "_clap_name";
-	_hitPoints = FragTrap::_hitPoints;
-	this->_energyPoints = ScavTrap::_energyPoints;
-	this->_attackDamage = FragTrap::_attackDamage;
+	_hitPoints = FragTrap::_DEFAULT_HP;
+	_energyPoints = ScavTrap::_DEFAULT_EP;
+	_attackDamage = FragTrap::_DEFAULT_AD;
+	_maxHitPoints = _hitPoints;
 	std::cout << "\033[1;32m" << "DiamondTrap "
 		<< this->_name << " is constructed."
 		<< "\033[0m" << std::endl;

@@ -3,22 +3,21 @@
 
 ScavTrap::ScavTrap(void): ClapTrap()
 {
-	_name = "nameless";
-	_hitPoints = 100;
-	_energyPoints = 50;
-	_attackDamage = 20;
-	_maxHitPoints = _hitPoints;
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m" << "ScavTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;
 }
 
-ScavTrap::ScavTrap(const std::string name): ClapTrap(name)
+ScavTrap::ScavTrap(const std::string& name): ClapTrap(name)
 {
-	_hitPoints = 100;
-	_energyPoints = 50;
-	_attackDamage = 20;
-	_maxHitPoints = _hitPoints;
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m" << "ScavTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;

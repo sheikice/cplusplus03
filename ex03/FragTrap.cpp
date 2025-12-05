@@ -3,22 +3,21 @@
 
 FragTrap::FragTrap(void) : ClapTrap()
 {
-	_name = "nameless";
-	_hitPoints = 100;
-	_energyPoints = 100;
-	_attackDamage = 30;
-	_maxHitPoints = _hitPoints;
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m" << "FragTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;
 }
 
-FragTrap::FragTrap(const std::string name) : ClapTrap(name)
+FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 {
-	_hitPoints = 100;
-	_energyPoints = 100;
-	_attackDamage = 30;
-	_maxHitPoints = _hitPoints;
+	_hitPoints = _DEFAULT_HP;
+	_energyPoints = _DEFAULT_EP;
+	_attackDamage = _DEFAULT_AD;
+	_maxHitPoints = _DEFAULT_HP;
 	std::cout << "\033[1;32m" << "FragTrap "
 		<< _name << " is constructed."
 		<< "\033[0m" << std::endl;
