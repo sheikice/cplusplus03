@@ -3,11 +3,11 @@
 
 int	main(void)
 {
-	ClapTrap	clappy("Bernard");
+	ClapTrap	clappy("Clappy");
 
-	clappy.attack("Bobby");
-	clappy.attack("Bobby");
-	clappy.attack("Bobby");
+	clappy.attack("someone");
+	clappy.attack("someone");
+	clappy.attack("someone");
 	clappy.beRepaired(2);
 	clappy.takeDamage(3);
 	clappy.takeDamage(3);
@@ -15,24 +15,24 @@ int	main(void)
 	clappy.beRepaired(4);
 	clappy.beRepaired(4);
 	clappy.beRepaired(4);
-	clappy.attack("Bobby");
-	clappy.attack("Bobby");
-	clappy.attack("Bobby");
-	clappy.attack("Bobby");
+	clappy.attack("someone");
+	clappy.attack("someone");
+	clappy.attack("someone");
+	clappy.attack("someone");
 	clappy.beRepaired(2);
 	clappy.takeDamage(3);
 	clappy.takeDamage(3);
 	clappy.takeDamage(3);
 	clappy.takeDamage(3);
 	clappy.takeDamage(3);
-	clappy.attack("Bobby");
+	clappy.attack("someone");
 	clappy.beRepaired(2);
 
-	ScavTrap	scavy("Berangere");
+	ScavTrap	scavy("scavy");
 
-	scavy.attack("Bobby");
-	scavy.attack("Bobby");
-	scavy.attack("Bobby");
+	scavy.attack("someone");
+	scavy.attack("someone");
+	scavy.attack("someone");
 	scavy.beRepaired(20);
 	scavy.takeDamage(30);
 	scavy.takeDamage(30);
@@ -40,25 +40,25 @@ int	main(void)
 	scavy.beRepaired(40);
 	scavy.beRepaired(40);
 	scavy.beRepaired(40);
-	scavy.attack("Bobby");
-	scavy.attack("Bobby");
-	scavy.attack("Bobby");
-	scavy.attack("Bobby");
+	scavy.attack("someone");
+	scavy.attack("someone");
+	scavy.attack("someone");
+	scavy.attack("someone");
 	scavy.beRepaired(20);
 	scavy.takeDamage(30);
 	scavy.takeDamage(30);
 	scavy.takeDamage(30);
 	scavy.takeDamage(30);
 	scavy.takeDamage(30);
-	scavy.attack("Bobby");
+	scavy.attack("someone");
 	scavy.beRepaired(20);
 	scavy.guardGate();
 
-	FragTrap	fraggy("Bernadette");
+	FragTrap	fraggy("fraggy");
 
-	fraggy.attack("Bobby");
-	fraggy.attack("Bobby");
-	fraggy.attack("Bobby");
+	fraggy.attack("someone");
+	fraggy.attack("someone");
+	fraggy.attack("someone");
 	fraggy.beRepaired(20);
 	fraggy.takeDamage(30);
 	fraggy.takeDamage(30);
@@ -66,17 +66,17 @@ int	main(void)
 	fraggy.beRepaired(40);
 	fraggy.beRepaired(40);
 	fraggy.beRepaired(40);
-	fraggy.attack("Bobby");
-	fraggy.attack("Bobby");
-	fraggy.attack("Bobby");
-	fraggy.attack("Bobby");
+	fraggy.attack("someone");
+	fraggy.attack("someone");
+	fraggy.attack("someone");
+	fraggy.attack("someone");
 	fraggy.beRepaired(20);
 	fraggy.takeDamage(30);
 	fraggy.takeDamage(30);
 	fraggy.takeDamage(30);
 	fraggy.takeDamage(30);
 	fraggy.takeDamage(30);
-	fraggy.attack("Bobby");
+	fraggy.attack("someone");
 	fraggy.beRepaired(20);
 	fraggy.highFivesGuys();
 	return (0);
