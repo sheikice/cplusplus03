@@ -22,7 +22,7 @@ class ClapTrap
 		~ClapTrap(void);
 		ClapTrap(const ClapTrap&);
 		ClapTrap& operator=(const ClapTrap&);
-		virtual void	attack(const std::string&);
+		void	attack(const std::string&);
 		void	takeDamage(unsigned int);
 		void	beRepaired(unsigned int);
 
